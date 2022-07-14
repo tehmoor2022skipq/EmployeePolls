@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import { getInitialData } from './utils/api'
-function App() {
+import { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { handleInitialData } from './action/shared';
+function App(props) {
+  useEffect(() => {
+    props.dispatch(handleInitialData())
+  }, [])
   return (
-    <div className="App">
-      {getInitialData().then(data => console.log(data))}
+    <div>
+
     </div>
   );
 }
 
-export default App;
+export default connect()(App);
