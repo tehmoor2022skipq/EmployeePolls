@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +37,191 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.questionContainer{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  border-color: rgb(113, 172, 196);
+  padding: 10px;
+  margin: 7px;
+  width: 175px;
+}
+
+.questionAuthor {
+  font-size: large;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(100, 112, 250);
+}
+
+.questionDate {
+  font-size: small; 
+  color: #373737;
+}
+
+.questionBtn {
+  font-size: small;
+  color: rgb(113, 172, 196);
+  background-color: white;
+  border-color: rgb(113, 172, 196);
+  border: solid 1px;
+  border-radius: 10%;
+}
+
+.questionBtn:hover {
+  color: white;
+  background-color: rgb(113, 172, 196);
+  border-color:rgb(113, 172, 196);
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.listContainer{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  border-color: rgb(113, 172, 196);
+  width: 1000px;
+  margin: 35px;
+  
+}
+
+.listTitle{
+  font-size: larger;
+  font-weight: bold;
+  border-bottom: solid 1px rgb(113, 172, 196);
+  border-color: rgb(113, 172, 196);
+  color: rgb(100, 112, 250);
+}
+
+.listQuestions{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  padding: 20px;
+}
+
+
+.leaderboard{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#leaderbordResults{
+  font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.pollImg {
+  width: 150px;
+  height: 150px;
+
+}
+.pollContainer {
+  display: flex;
+}
+.pollOption{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 90px;
+  margin-right: 20px;
+  padding: 15px;
+  border: solid 1px #aaaaaa;
+ 
+}
+.pollBtn{
+  font-size: small;
+    color: rgb(113, 172, 196);
+    background-color: white;
+    border-color: rgb(113, 172, 196);
+    border: solid 1px;
+    border-radius: 10%;
+    width: 200px;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 60px;
+}
+.pollBtn:hover{
+  color: white;
+    background-color: rgb(113, 172, 196);
+    border-color: rgb(113, 172, 196);
+    border: solid 1px;
+    cursor: pointer;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(113, 172, 196);
+  color: white;
+}
+
+.navItems{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.logout{
+  display: flex;
+}
+
+.logoutBtn:hover{
+  cursor: pointer;
+  color: rgb(52, 63, 189);
+  text-decoration: underline;
+}
+
+.navItem{
+  color: white;
+  text-decoration: none;
+}
+.navItem:hover {
+  cursor: pointer;
+    color: rgb(52, 63, 189);
+    text-decoration: underline;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.formStyle{
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 400px;
+
+}
+#leaderbordResults td,
+#leaderbordResults th {
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+
+#leaderbordResults tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#leaderbordResults tr:hover {
+  background-color: #ddd;
+}
+
+#leaderbordResults th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
 }
